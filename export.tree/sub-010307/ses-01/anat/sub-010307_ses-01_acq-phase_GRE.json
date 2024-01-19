@@ -1,0 +1,17 @@
+{
+    "EchoTime": 0.0173, 
+    "RepetitionTime": 0.03, 
+    "OrientationAngle": -18.1, 
+    "MagneticFieldStrength": 3, 
+    "FlipAngle": 12.7584, 
+    "PulseSequenceType": "Gradient-Echo", 
+    "PhaseEncodingDirection": "i-", 
+    "ManufacturersModelName": "Verio", 
+    "ImageType": [
+        "ORIGINAL", 
+        "PRIMARY", 
+        "M", 
+        "ND"
+    ], 
+    "Manufacturer": "Siemens"
+}

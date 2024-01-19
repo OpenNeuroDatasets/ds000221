@@ -1,0 +1,20 @@
+{
+    "RepetitionTime": 0.68, 
+    "EchoTime1": 0.00519, 
+    "EchoTime2": 0.00765, 
+    "MagneticFieldStrength": 3, 
+    "FlipAngle": 60, 
+    "PhaseEncodingDirection": "i-", 
+    "ManufacturersModelName": "Verio", 
+    "IntendedFor": [
+        "ses-02/func/sub-010055_ses-02_task-rest_acq-AP_run-01_bold.nii.gz", 
+        "ses-02/func/sub-010055_ses-02_task-rest_acq-PA_run-01_bold.nii.gz"
+    ], 
+    "ImageType": [
+        "ORIGINAL", 
+        "PRIMARY", 
+        "P", 
+        "ND"
+    ], 
+    "Manufacturer": "Siemens"
+}
