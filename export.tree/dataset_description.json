@@ -1,0 +1,43 @@
+{
+    "Name": "MPI-Leipzig_Mind-Brain-Body",
+    "BIDSVersion": "1.0.1",
+    "License": "CC0",
+    "Authors": [
+        "Anahit Babayan",
+        "Blazeij Baczkowski",
+        "Roberto Cozatl",
+        "Maria Dreyer",
+        "Haakon Engen",
+        "Miray Erbey",
+        "Marcel Falkiewicz",
+        "Nicolas Farrugia",
+        "Michael Gaebler",
+        "Johannes Golchert",
+        "Laura Golz",
+        "Krzysztof Gorgolewski",
+        "Philipp Haueis",
+        "Julia Huntenburg",
+        "Rebecca Jost",
+        "Yelyzaveta Kramarenko",
+        "Sarah Krause",
+        "Deniz Kumral",
+        "Mark Lauckner",
+        "Daniel S. Margulies",
+        "Natacha Mendes",
+        "Katharina Ohrnberger",
+        "Sabine Oligschl\u00e4ger",
+        "Anastasia Osoianu",
+        "Jared Pool",
+        "Janis Reichelt",
+        "Andrea Reiter",
+        "Josefin R\u00f6bbig",
+        "Lina Schaare",
+        "Jonathan Smallwood",
+        "Arno Villringer"
+    ],
+    "HowToAcknowledge": "This data was obtained from the OpenfMRI database. Its accession number is ds000221.",
+    "Funding": [
+        "This work was partially supported by the Volkswagen Foundation (AZ.: 89 440)"
+    ],
+    "DatasetDOI": "10.18112/openneuro.ds000221.v1.0.0"
+}

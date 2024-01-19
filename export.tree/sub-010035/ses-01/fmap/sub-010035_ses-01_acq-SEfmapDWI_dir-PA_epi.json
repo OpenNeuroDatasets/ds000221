@@ -1,0 +1,19 @@
+{
+    "EchoTime": 0.08, 
+    "RepetitionTime": 7, 
+    "MagneticFieldStrength": 3, 
+    "FlipAngle": 90, 
+    "PhaseEncodingDirection": "j", 
+    "EffectiveEchoSpacing": 0.000390001, 
+    "TotalReadoutTime": 0.04914, 
+    "ManufacturersModelName": "Verio", 
+    "IntendedFor": "ses-01/dwi/sub-010035_ses-01_dwi.nii.gz", 
+    "ImageType": [
+        "ORIGINAL", 
+        "PRIMARY", 
+        "M", 
+        "ND", 
+        "MOSAIC"
+    ], 
+    "Manufacturer": "Siemens"
+}
