@@ -1,0 +1,22 @@
+{
+    "EchoTime": 0.00292, 
+    "RepetitionTime": 5, 
+    "MagneticFieldStrength": 3, 
+    "InversionTime": 0.7, 
+    "FlipAngle": 4, 
+    "ParallelReductionFactorInPlane": 3, 
+    "PulseSequenceType": "MP2RAGE", 
+    "PhaseEncodingDirection": "i-", 
+    "ImageType": [
+        "ORIGINAL", 
+        "PRIMARY", 
+        "M", 
+        "ND", 
+        "NORM"
+    ], 
+    "ManufacturersModelName": "Verio", 
+    "ParallelAcquisitionTechnique": "GRAPPA", 
+    "NumberShots": 14080, 
+    "HardcopyDeviceSoftwareVersion": "Syngo MR B17", 
+    "Manufacturer": "Siemens"
+}

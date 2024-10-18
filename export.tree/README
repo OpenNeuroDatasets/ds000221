@@ -1,0 +1,171 @@
+The MPI-Leipzig Mind-Brain-Body dataset contains MRI and behavioral data from 318 participants. Datasets for all participants include at least a structural quantitative T1-weighted image and a single 15-minute eyes-open resting-state fMRI session.
+ 
+The participants took part in one or two extended protocols: Leipzig Mind-Body-Brain Interactions (LEMON) and Neuroanatomy & Connectivity Protocol (N&C). The data from LEMON protocol is included in the ‘ses-01’ subfolder; the data from N&C protocol in ‘ses-02’ subfolder.
+
+LEMON focuses on structural imaging. 228 participants were scanned.  In addition to the quantitative T1-weighted image, the participants also have a structural T2-weighted image (226 participants), a diffusion-weighted image with 64 directions (228) and a 15-minute eyes-open resting-state session (228). New imaging sequences were introduced into the LEMON protocol after data acquisition for approximately 110 participants. Before the change, a low-resolution 2D FLAIR images were acquired for clinical purposes (110). After the change, 2D FLAIR was replaced with high-resolution 3D FLAIR (117). The second addition was the acquisition of gradient-echo images (112) that can be used for Susceptibility-Weighted Imaging (SWI) and Quantitative Susceptibility Mapping (QSM). 
+
+The N&C protocol focuses on resting-state fMRI data. 199 participants were scanned with this protocol; 109 participants also took part in the LEMON protocol. Structural data was not acquired for the overlapping LEMON participants. For the unique N&C participants, only a T1-weighted and a low-resolution FLAIR image were acquired. Four 15-minute runs of eyes-open resting-state are the main component of N&C; they are complete for 194 participants, three participants have 3 runs, one participant has 2 runs and one participant has a single run. Due to a bug in multiband sequence used in this protocol, the echo time for N&C resting-state is longer than in LEMON — 39.4 ms vs 30 ms. 
+
+Forty-five participants have complete imaging data: quantitative T1-weighted, T2-weighted, high-resolution 3D FLAIR, DWI, GRE and 75 minutes of resting-state. Both gradient-echo and spin-echo field maps are available in both datasets for all EPI-based sequences (rsfMRI and DWI). 
+
+Extensive behavioral data was acquired in both protocols. They include trait and state questionnaires, as well as behavioral tasks. Here we only list the tasks; more extenstive descriptions are available in the manuscripts.
+
+# LEMON QUESTIONNAIRES/TASKS [not yet released]
+
+California Verbal Learning Test (CVLT)
+Testbatterie zur Aufmerksamkeitsprüfung (TAP Alertness, Incompatibility, Working Memory)
+Trail Marking Test (TMT)
+Wortschatztest (WST)
+Leistungsprüfungssystem 2 (LPS-2)
+Regensburger Wortflüssigkeitstest (RWT)
+
+NEO Five-Factor Inventory (NEO-FFI)
+Impulsive Behavior Scale (UPPS)
+Behavioral Inhibition and Approach System (BISBAS)
+Cognitive Emotion Regulation Questionnaire (CERQ)
+Measure of Affective Style (MARS)
+Fragebogen zur Sozialen Unterstützung (F-SozU K)
+The Multidimensional Scale of Perceived Social Support (MSPSS)
+Coping Orientations to Problems Experienced (COPE)
+Life Orientation Test-Revised (LOT-R)
+Perceived Stress Questionnaire (PSQ)
+the Trier Inventory of Chronic Stress (TICS)
+The three-factor eating questionnaire (TFEQ)
+Yale Food Addiction Scale (YFAS)
+The Trait Emotional Intelligence Questionnaire (TEIQue-SF)
+Trait Scale of the State-Trait Anxiety Inventory (STAI)
+State-Trait Anger expression Inventory (STAXI)
+Toronto-Alexithymia Scale (TAS)
+Multidimensional Mood Questionnaire (MDMQ)
+New York Cognition Questionnaire (NYC-Q)
+
+# N&C QUESTIONNAIRES
+Adult Self Report (ASR)
+Goldsmiths Musical Sophistication Index (Gold-MSI)
+Internet Addiction Test (IAT)
+Involuntary Musical Imagery Scale (IMIS)
+Multi-Gender Identity Questionnaire (MGIQ)
+Brief Self-Control Scale (SCS)
+Short Dark Triad (SD3)
+Social Desirability Scale-17 (SDS)
+Self-Esteem Scale (SE)
+Tuckman Procrastination Scale (TPS)
+Varieties of Inner Speech (VISQ)
+UPPS-P Impulsive Behavior Scale (UPPS-P)
+Attention Control Scale (ACS)
+Beck's Depression Inventory-II (BDI)
+Boredom Proneness Scale (BP)
+Esworth Sleepiness Scale (ESS)
+Hospital Anxiety and Depression Scale (HADS)
+Multimedia Multitasking Index (MMI)
+Mobile Phone Usage (MPU)
+Personality Style and Disorder Inventory (PSSI)
+Spontaneous and Deliberate Mind-Wandering (S-D-MW)
+Short New York Cognition Scale (Short-NYC-Q)
+New York Cognition Scale (NYC-Q)
+Abbreviated Math Anxiety Scale (AMAS)
+Behavioral Inhibition and Approach System (BIS/BAS)
+NEO Personality Inventory Revised (NEO-PI-R)
+Body Consciousness Questionnaire (BCQ)
+Creative achievement questionnaire (CAQ)
+Five facets of mindfulness (FFMQ)
+Metacognition (MCQ-30)
+
+# N&C TASKS
+Conjunctive continuous performance task (CCPT)
+Emotional task switching (ETS)
+Adaptive visual and auditory oddball target detection task (Oddball)
+Alternative uses task (AUT)
+Remote associates test (RAT)
+Synesthesia color picker test (SYN)
+Test of creative imagery abilities (TCIA)
+
+
+### Comments added by Openfmri Curators ###
+===========================================
+
+General Comments
+----------------
+
+
+Defacing
+--------
+Pydeface was used on all anatomical images to ensure deindentification of subjects. The code
+can be found at https://github.com/poldracklab/pydeface
+
+Where to discuss the dataset
+----------------------------
+1) www.openfmri.org/dataset/ds000221/ See the comments section at the bottom of the dataset
+page.
+2) www.neurostars.org Please tag any discussion topics with the tags openfmri and ds000221.
+3) Send an email to submissions@openfmri.org. Please include the accession number in
+your email.
+
+Known Issues
+------------
+N/A
+
+Bids-validator Output
+---------------------
+A verbose bids-validator output is under '/derivatives/bidsvalidatorOutput_long'.
+Short version of BIDS output is as follows:
+
+	1: This file is not part of the BIDS specification, make sure it isn't included in the dataset by accident. Data derivatives (processed data) should be placed in /derivatives folder. (code: 1 - NOT_INCLUDED)
+		/sub-010001/ses-02/anat/sub-010001_ses-02_inv-1_mp2rage.json
+			Evidence: sub-010001_ses-02_inv-1_mp2rage.json
+		/sub-010001/ses-02/anat/sub-010001_ses-02_inv-1_mp2rage.nii.gz
+			Evidence: sub-010001_ses-02_inv-1_mp2rage.nii.gz
+		/sub-010001/ses-02/anat/sub-010001_ses-02_inv-2_mp2rage.json
+			Evidence: sub-010001_ses-02_inv-2_mp2rage.json
+		/sub-010001/ses-02/anat/sub-010001_ses-02_inv-2_mp2rage.nii.gz
+			Evidence: sub-010001_ses-02_inv-2_mp2rage.nii.gz
+		/sub-010002/ses-01/anat/sub-010002_ses-01_inv-1_mp2rage.json
+			Evidence: sub-010002_ses-01_inv-1_mp2rage.json
+		/sub-010002/ses-01/anat/sub-010002_ses-01_inv-1_mp2rage.nii.gz
+			Evidence: sub-010002_ses-01_inv-1_mp2rage.nii.gz
+		/sub-010002/ses-01/anat/sub-010002_ses-01_inv-2_mp2rage.json
+			Evidence: sub-010002_ses-01_inv-2_mp2rage.json
+		/sub-010002/ses-01/anat/sub-010002_ses-01_inv-2_mp2rage.nii.gz
+			Evidence: sub-010002_ses-01_inv-2_mp2rage.nii.gz
+		/sub-010003/ses-01/anat/sub-010003_ses-01_inv-1_mp2rage.json
+			Evidence: sub-010003_ses-01_inv-1_mp2rage.json
+		/sub-010003/ses-01/anat/sub-010003_ses-01_inv-1_mp2rage.nii.gz
+			Evidence: sub-010003_ses-01_inv-1_mp2rage.nii.gz
+		... and 1710 more files having this issue (Use --verbose to see them all).
+
+	2: Not all subjects contain the same files. Each subject should contain the same number of files with the same naming unless some files are known to be missing. (code: 38 - INCONSISTENT_SUBJECTS)
+		/sub-010001/ses-01/anat/sub-010001_ses-01_T2w.json
+		/sub-010001/ses-01/anat/sub-010001_ses-01_T2w.nii.gz
+		/sub-010001/ses-01/anat/sub-010001_ses-01_acq-highres_FLAIR.json
+		/sub-010001/ses-01/anat/sub-010001_ses-01_acq-highres_FLAIR.nii.gz
+		/sub-010001/ses-01/anat/sub-010001_ses-01_acq-lowres_FLAIR.json
+		/sub-010001/ses-01/anat/sub-010001_ses-01_acq-lowres_FLAIR.nii.gz
+		/sub-010001/ses-01/anat/sub-010001_ses-01_acq-mp2rage_T1map.nii.gz
+		/sub-010001/ses-01/anat/sub-010001_ses-01_acq-mp2rage_T1w.nii.gz
+		/sub-010001/ses-01/anat/sub-010001_ses-01_acq-mp2rage_defacemask.nii.gz
+		/sub-010001/ses-01/dwi/sub-010001_ses-01_dwi.bval
+		... and 8624 more files having this issue (Use --verbose to see them all).
+
+	3: Not all subjects/sessions/runs have the same scanning parameters. (code: 39 - INCONSISTENT_PARAMETERS)
+		/sub-010007/ses-02/anat/sub-010007_ses-02_acq-mp2rage_T1map.nii.gz
+		/sub-010007/ses-02/anat/sub-010007_ses-02_acq-mp2rage_T1w.nii.gz
+		/sub-010007/ses-02/anat/sub-010007_ses-02_acq-mp2rage_defacemask.nii.gz
+		/sub-010045/ses-01/dwi/sub-010045_ses-01_dwi.nii.gz
+		/sub-010087/ses-02/func/sub-010087_ses-02_task-rest_acq-PA_run-01_bold.nii.gz
+		/sub-010189/ses-02/anat/sub-010189_ses-02_acq-lowres_FLAIR.nii.gz
+		/sub-010201/ses-02/func/sub-010201_ses-02_task-rest_acq-PA_run-02_bold.nii.gz
+
+        Summary:                     Available Tasks:        Available Modalities:
+        14714 Files, 390.74GB        Rest                    FLAIR
+        318 - Subjects                                       T1map
+        2 - Sessions                                         T1w
+                                                             defacemask
+                                                             bold
+                                                             T2w
+                                                             dwi
+                                                             fieldmap
+                                                             fieldmap
+
+
+
+
