@@ -1,0 +1,10 @@
+{
+	"Manufacturer": "Siemens",
+	"ManufacturersModelName": "Verio",
+	"ImageType": ["ORIGINAL", "PRIMARY", "M", "ND", "NORM"],
+	"MagneticFieldStrength": 3,
+	"FlipAngle": 120,
+	"EchoTime": 0.409,
+	"RepetitionTime": 3.2,
+	"PhaseEncodingDirection": "i-"
+}
